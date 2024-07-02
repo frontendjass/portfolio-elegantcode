@@ -16,7 +16,7 @@ function App() {
       {isLoading ? (
         <Loader loadingTime={loadingTime} />
       ) : (
-        <main>
+        <main className='bg-swirl-100 h-screen'>
           <span>Loaded</span>
         </main>
       )}

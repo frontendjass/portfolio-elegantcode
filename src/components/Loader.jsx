@@ -6,13 +6,13 @@ export default function Loader({ loadingTime }) {
   const duration = totalDuration / loadingText.length;
 
   return (
-    <div className='bg-stone-300 h-screen'>
+    <div className='bg-swirl-100 h-screen'>
       <div className='flex h-full justify-center items-center'>
         <motion.h1
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           transition={{ duration: 0.5, delay: totalDuration + 0.5 }}
-          className='text-5xl md:text-8xl'
+          className='text-shark-950 text-5xl font-playFair md:text-8xl'
         >
           {loadingText.split('').map((letter, index) => (
             <motion.span
