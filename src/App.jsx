@@ -1,5 +1,6 @@
 import Loader from './components/Loader';
 import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,15 +13,15 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className='overflow-x-hidden'>
       {isLoading ? (
         <Loader loadingTime={loadingTime} />
       ) : (
         <main className='bg-swirl-100 h-screen'>
-          <span>Loaded</span>
+          <Navbar />
         </main>
       )}
-    </>
+    </div>
   );
 }
 
