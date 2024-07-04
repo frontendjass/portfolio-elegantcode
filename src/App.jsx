@@ -1,9 +1,12 @@
 import Loader from './components/Loader';
 import { useEffect, useState } from 'react';
+
 import Navbar from './components/Navbar';
+import Cursor from './components/Cursor';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+
   const loadingTime = 1500;
 
   useEffect(() => {
@@ -14,6 +17,7 @@ function App() {
 
   return (
     <div className='overflow-x-hidden'>
+    {/* <Cursor /> */}
       {isLoading ? (
         <Loader loadingTime={loadingTime} />
       ) : (
