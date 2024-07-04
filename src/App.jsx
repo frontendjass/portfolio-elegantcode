@@ -2,7 +2,7 @@ import Loader from './components/Loader';
 import { useEffect, useState } from 'react';
 
 import Navbar from './components/Navbar';
-import Cursor from './components/Cursor';
+// import Cursor from './components/Cursor';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
